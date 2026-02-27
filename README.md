@@ -24,13 +24,12 @@ A complete, reusable **FastAPI + MongoDB** authentication and authorization temp
    ```
 4. Create a `.env` file (see `.env.example`):
    ```
-   SECRET_KEY=your_random_secret_key
-   ALGORITHM=HS256
+   SECRET_KEY=
+   ALGORITHM=
    ACCESS_TOKEN_MINUTES=30
    REFRESH_TOKEN_DAYS=7
-   MONGODB_URL=mongodb+srv://user:pass@cluster.mongodb.net/edusphere_db
+   MONGODB_URL=
    ```
-   *Note: If your password contains special characters like `@`, URL-encode them (e.g., `@` becomes `%40`).*
 
 ## API Endpoints
 - `POST /auth/register` - Create user
